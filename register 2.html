@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <style>
+  body {
+      background-image: url('background1.jpeg');
+      background-size: cover;
+    }
+	
+	
+	body {
+	font-family: arial, sans-seriff;
+	}
+  
+    table {
+      border-collapse: collapse;
+      width: 60%;
+     margin-top: 20px;
+	 margin-left: 250px;
+	 
+	 background-color: #808080;
+	
+    }
+    
+    th, td {
+      text-align: left;
+	  color: #fff;
+      padding: 10px;
+      border-bottom: 2px solid #ddd;
+    }
+    
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+    
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    
+    input[type="submit"], input[type="reset"], input[type="button"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+      background-color: #333;
+    }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  </style>
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="file:///C:/Users/User/Documents/DEGREE/CSC574/biography.html">Biography</a>
+  <a href="resume2.html">Resume</a>
+   
+  <a href="file:///C:/Users/User/Documents/DEGREE/CSC574/timetable.html">Time Table</a>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Galleries 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gallery.html">Image</a>
+      <a href="video2.html">Video</a>
+      <a href="audio.html">Audio</a>
+    </div>
+	
+  </div> 
+  <a href="Download.html">Download</a>
+   <a href="file:///C:/Users/User/Documents/DEGREE/CSC574/link2%20.html">Link</a>
+   <a href="register 2.html">Register</a>
+   
+  
+   
+   <div class="topnav-right">
+     <div class="dropdown">
+    <button class="dropbtn">Social Media 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.instagram.com/mhdirfann_/">Instagram</a>
+      <a href="https://wa.link/n1djrt">Whatsapp</a>
+      <a href="https://t.me/mhdirfannnnn">Telegram</a>
+    </div>
+	
+  </div> 
+    <a href="file:///C:/Users/User/Documents/DEGREE/CSC574/login%20.html">Login</a>
+  </div>
+ </div>
+
+
+  <form>
+    <table>
+      <tr>
+        <th colspan="2">Personal Information</th>
+      </tr>
+      <tr>
+        <td><label for="first-name">First Name:</label></td>
+        <td><input type="text" id="first-name" name="first-name" required></td>
+      </tr>
+      <tr>
+        <td><label for="last-name">Last Name:</label></td>
+        <td><input type="text" id="last-name" name="last-name" required></td>
+      </tr>
+      <tr>
+        <td><label for="gender">Gender:</label></td>
+        <td>
+          <label><input type="radio" name="gender" value="male" required>Male</label>
+          <label><input type="radio" name="gender" value="female" required>Female</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="address1">Address 1:</label></td>
+        <td><input type="text" id="address1" name="address1" required></td>
+      </tr>
+      <tr>
+        <td><label for="address2">Address 2:</label></td>
+        <td><input type="text" id="address2" name="address2"></td>
+      </tr>
+      <tr>
+        <td><label for="city">City:</label></td>
+        <td><input type="text" id="city" name="city" required></td>
+      </tr>
+      <tr>
+        <td><label for="state">State:</label></td>
+        <td>
+          <select id="state" name="state" required>
+            <option value="">--Please select--</option>
+            <option value="Perlis">Perlis</option>
+            <option value="Kedah">Kedah</option>
+            <option value="Pulau Pinang">Pulau Pinang</option>
+			<option value="Selangor">Selangor</option>
+			<option value="Pahang">Pahang</option>
+			<option value="Melaka">Melaka</option>
+			<option value="Kelantan">Kelantan</option>
+			<option value="Terengganu">Terengganu</option>
+			<option value="Sabah">Sabah</option>
+			<option value="Johor">Johor</option>
+			<option value="Sarawak">Sarawak</option>
+			<option value="Negeri Sembilan">Negeri Sembilan</option>
+			<option value="Perak">Perak</option>
+			<option value="WP Kuala Lumpur">WP Kuala Lumpur</option>
+			<option value="WP Putrajaya">WP Putrajaya</option>
+			<option value="WP Labuan">WP Labuan</option>            
+         <tr>
+        <td><label for="phone number">Phone Number:</label></td>
+        <td><input type="text" id="phone nuber" name="phone number"> </td>
+      </tr>
+         <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email"></td>
+      </tr>
+      <tr>
+        <td><label for="education">Eductional Background:</label></td>
+        <td>
+          <select id="education" name="education" required>
+            <option value="">--Please select--</option>
+            <option value="SPM">SPM</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Degree">Degree</option>
+            <option value="Master">Master</option>
+            <option value="PHD">PHD</option>
+        
+        <tr>
+        <td><label for="username">Username:</label></td>
+        <td><input type="text" id="username" name="username" required></td>
+      </tr>
+      
+          <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" name="password" required></td>
+      </tr>
+          <tr>
+        <td><label for="pwd">Re-enter Password:</label></td>
+        <td><input type="password" id="pwd" name="pwd" required></td>
+      </tr>
+         
+      
+      
+      
+       </table>
+		<div style="text-align: center;">
+			<input type="submit" value="Submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+			<input type="reset" value="Clear" style="background-color: #f44336; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+			<input type="button" value="Cancel" onclick="window.location.href='index.html'" style="background-color: #ccc; color: black; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">
+		</div>
+	</form>
+</body>
+</html>   
